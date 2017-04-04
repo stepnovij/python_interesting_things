@@ -23,8 +23,7 @@ def test(x):
 
 def test_2(x):
     global r
-    mm = memoryview(r)
-    mm2 = mm[:x]
+    mm2 = memoryview(r)[:x]
     return mm2[:len(mm2)//2]
 
 
